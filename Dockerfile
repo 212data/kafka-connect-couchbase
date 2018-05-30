@@ -40,6 +40,7 @@ WORKDIR "/opt"
 
 COPY target/kafka-connect-couchbase-3.2.4-SNAPSHOT.jar /opt/kafka-connect-couchbase.jar
 COPY config/quickstart-couchbase-source.properties /opt/quickstart-couchbase-source.properties
+COPY config/connect-standalone.properties /opt/connect-standalone.properties
 
 COPY entrypoint.sh /opt/entrypoint.sh
 
